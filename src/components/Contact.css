@@ -1,0 +1,40 @@
+.effect-hover{
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     display: inline-block;
+     background: #00ABF0;
+     transition:  0.4s;
+}
+.button:hover .effect-hover{
+     left: 0%;
+}
+.button:hover {
+    box-shadow: 0 0 5px #00ABF0, 0 0 5px #00ABF0 , 0 0 5px #00ABF0 , 0 0 5px #00ABF0;
+}
+#contact form input,textarea{
+    transition: 0.3s;
+}
+#contact form div > input:focus {
+    transform: scale(1.05);
+}
+#contact form  textarea:focus {
+    transform: scale(1.05);
+}
+#contact  .coverAnimation{
+    transform: rotate(180deg);
+    display: inline-block;
+    width: 340px;
+    height: 100%;
+    position: absolute;
+    background: #081B29;
+    transition: width 1.2s cubic-bezier(0.23, 1, 0.320, 1);
+    transform-origin: center;
+    /* transform: rotate(180deg); */
+    right: 0;
+ }
+ #contact form .coverAnimation {
+    width: 100%;
+ }

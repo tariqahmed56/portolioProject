@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+a{
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+header nav a .botom-line{
+    position: absolute;
+    display: inline-block;
+    height: 2px solid #00ABF0;
+    width: 0%;
+    bottom: 0;
+}
+header nav a:hover .botom-line{
+    width: 100%;
+}

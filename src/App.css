@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+   margin: 0;padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    background: #081B29;
+    width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
+}
+canvas{
+    height: 100dvh !important;
+    overflow: hidden !important;
+   
+}
+.main{
+    /* height: 100dvh; */
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
+
+}
+section,header{
+    /* scroll-snap-align: start; */
+}
+header nav{
+    
+}
+a{
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+header nav a .botom-line{
+    position: absolute;
+    display: inline-block;
+    height: 2px solid #00ABF0;
+    width: 0%;
+    bottom: 0;
+}
+header nav a:hover .botom-line{
+    width: 100%;
+}
+
+@media (max-width:650px) {
+ html{
+    font-size: 14px;
+ }   
+}
+.wt-a{
+    position: relative;
+}
+.wt{
+    width: 100%;
+    height: 100%;
+    background: #00ABF0;
+    display: inline-block;
+    position: absolute;
+    border-radius: 100%;
+    transition: 0.4s;
+    top: 0%;
+    z-index: -1;
+    left: 0px;
+}
+.wt-a:hover .wt{
+ top: 100%;
+ left: 0;
+ color: #00ABF0;
+}
+.wt-a:hover .wt-logo{
+    color: #fff;
+}
+.wt-a:hover{
+    box-shadow: 10px 5px 40px #00ABF0;
+}

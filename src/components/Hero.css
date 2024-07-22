@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#home {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  user-select: none;
+}
+
+#home h1.intro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  caret-color: #00ABF0;
+  user-select: none;
+}
+
+#home h1.mywork  {
+  color: transparent;
+  -webkit-text-stroke: 1px #00ABF0;
+  position: relative;
+}
+#home h1.mywork::before{
+    background-color: #00ABF0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    content: attr(data-fill-text);
+    position: absolute;
+    width: 0%;
+    animation: textFillAnimation 3s ease-in-out 1s infinite ;
+}
+@keyframes textFillAnimation {
+    0%{
+        width: 0;
+    }
+    80%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+.btn1{
+    border-radius: 1px solid #00ABF0;
+    color: #fff;
+    position: relative;
+    z-index: 99;
+    border: 1px solid #00ABF0;
+}
+.btn1::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #00ABF0;
+    transition: width 0.4s;
+    transform-origin: right;
+    left: 0;
+    top: 0;
+}
+.btn1:hover::before{
+    width: 0%;
+    transform-origin: left;
+}
+.btn1:hover{
+    color: #00ABF0;
+    box-shadow: 0 0 5px #00ABF0, 0 0 0px #00ABF0 , 0 0 0px #00ABF0 , 0 0 25px #00ABF0;
+}
+ 
+.btn2{
+    
+        border-radius: 1px solid #00ABF0;
+        color: #fff;
+        position: relative;
+        z-index: 99;
+        border: 1px solid #00ABF0;
+        
+}
+
+.btn2:hover{
+    box-shadow: 0 0 5px #00ABF0, 0 0 0px #00ABF0 , 0 0 0px #00ABF0 , 0 0 25px #00ABF0;
+
+}
+.btn2::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background: #00ABF0;
+    transition: width 0.4s;
+    transform-origin: right;
+    left: 0;
+    top: 0;
+}
+.btn2:hover::before{
+    width: 100%;
+}
+.socialLinks{
+    padding: 4px 20px;
+}
+.socialLinks .links{
+    transition: 0.3s;
+    position: relative;
+}
+.socialLinks .link:hover{
+    box-shadow: 0 0 5px #00ABF0,0 0 10px #00ABF0,0 0 20px #00ABF0,0 0 40px #00ABF0;
+}
+
+ .hover-effect{
+    width: 2.4rem;
+    height: 2.4rem;
+    background: #00ABF0;
+    display: inline-block;
+    position: absolute;
+    border-radius: 100%;
+    transition: 0.4s;
+    top: 2.4rem;
+    left: -1px;
+} 
+.socialLinks .link:hover .hover-effect{
+    top: 0px;
+    left: -1px;
+
+}
+h1.intro{
+    user-select: none;
+}
